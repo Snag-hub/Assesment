@@ -1,0 +1,29 @@
+
+.section{
+  height: 100vh;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.section-left h2{
+  color: azure;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-left p{
+  color: azure;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.section-right img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}

@@ -1,13 +1,13 @@
 import "./App.css";
+import Section from "./components/Sections/Section";
 import HeroSec from "./components/bannerSection/HeroSec";
 
-// import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-        {/* <Navbar /> */}
         <HeroSec />
+        <Section />
     </>
   );
 }
