@@ -13,7 +13,7 @@ const HeroSec = () => {
             <Navbar />
           </div>
           <div className="hero-text">
-            <div className="">
+            <div className="img">
               <img src="./assets/Name.png" alt="logo" />
             </div>
             <p>

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Section.css";
 
-// array of objects
 const data = [
   {
     key: 1,
@@ -30,7 +29,7 @@ const data = [
     img: "./assets/Hotel.gif",
     title: {
       title: "Making accommodations ",
-      span: "easier",
+      span: " easier",
     },
     desc: "Introducing capsule hotels in places of extreme need such as examination centres and hospitals to provide comfortable and convenient accommodation at pocket friendly prices",
     buttonBorderColor: { borderColor: "#F9A826" },
@@ -113,39 +112,47 @@ const Section = () => {
           </div>
           {data.key % 2 === 0 ? (
             <div key={data.key} className="section-wrapper-even">
-              <div style={data.circleColor} className="circle-even"></div>
-              <img className="imageInCircle-even" src={data.circleIcon} alt="" />
-              <div className="section-left-even">
-                <h2>
-                  {data.title.title}{" "}
-                  <span style={data.spanColor}>{data.title.span}</span>
-                </h2>
-                <p>{data.desc}</p>
-                <div className="btn-even">
-                  <button style={data.buttonBorderColor}>Read More</button>
-                  <div className="circle2-even"></div>
+              <div className="line-even">
+                <div style={data.circleColor} className="circle-even"></div>
+                <img
+                  className="imageInCircle-even"
+                  src={data.circleIcon}
+                  alt=""
+                />
+                <div className="section-left-even">
+                  <h2>
+                    {data.title.title}{" "}
+                    <span style={data.spanColor}>{data.title.span}</span>
+                  </h2>
+                  <p>{data.desc}</p>
+                  <div className="btn-even">
+                    <button style={data.buttonBorderColor}>Read More</button>
+                    <div className="circle2-even"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="section-right-even">
-                <img src={data.img} alt="" />
+                <div className="section-right-even">
+                  <img src={data.img} alt="" />
+                </div>
               </div>
             </div>
           ) : (
             <div key={data.key} className="section-wrapper">
-              <div style={data.circleColor} className="circle"></div>
-              <img className="imageInCircle" src={data.circleIcon} alt="" />
-              <div className="section-right">
-                <img src={data.img} alt="" />
-              </div>
-              <div className="section-left">
-                <h2>
-                  {data.title.title}{" "}
-                  <span style={data.spanColor}>{data.title.span}</span>
-                </h2>
-                <p>{data.desc}</p>
-                <div className="btn">
-                  <button style={data.buttonBorderColor}>Read More</button>
-                  <div className="circle2"></div>
+              <div className="line1">
+                <div style={data.circleColor} className="circle"></div>
+                <img className="imageInCircle" src={data.circleIcon} alt="" />
+                <div className="section-right">
+                  <img src={data.img} alt="" />
+                </div>
+                <div className="section-left">
+                  <h2>
+                    {data.title.title}{" "}
+                    <span style={data.spanColor}>{data.title.span}</span>
+                  </h2>
+                  <p>{data.desc}</p>
+                  <div className="btn">
+                    <button style={data.buttonBorderColor}>Read More</button>
+                    <div className="circle2"></div>
+                  </div>
                 </div>
               </div>
             </div>
